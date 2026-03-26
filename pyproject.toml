@@ -1,0 +1,22 @@
+[project]
+name = "psy-assistant"
+version = "0.1.0"
+description = "Telegram AI calendar assistant"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "openai-agents",
+  "openai",
+  "python-telegram-bot>=21.0",
+  "google-api-python-client",
+  "google-auth",
+  "google-auth-oauthlib",
+  "python-dotenv",
+]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["app", "google_calendar", "calendar_tools", "agent_setup"]
